@@ -40,6 +40,7 @@ class ClassSection:
         self.day = ""
         self.time = ""
         self.building = ""
+        self.floor = ""
         self.room = ""
 
     def set_day(self, day):
