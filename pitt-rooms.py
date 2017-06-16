@@ -7,12 +7,12 @@ connection = sqlite3.connect(sqlite_file)
 cursor = connection.cursor()
 
 def convert_to_24hr(time):
-    #format: "hh:MM XX" or "HH:MM" or datetime.time (HH:MM:SS)
+#format: "hh:MM XX" or "HH:MM" or datetime.time (HH:MM:SS)
     if "PM" in time:
         am_pm = "PM"
     else:
-        am_pm = "AM"
-
+        am_pm = "AM" 
+    
     time = time.split(" ")
     time = time[0].split(":")
     hour = int(time[0])
